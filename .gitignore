@@ -1,0 +1,10 @@
+﻿################################################################################
+# Diese .gitignore-Datei wurde von Microsoft(R) Visual Studio automatisch erstellt.
+################################################################################
+
+/.vs
+/src/OdataServiceClient/.vs/OdataServiceClient/v16
+/src/OdataServiceClient/OdataServiceClient.Konsole/obj
+/src/OdataServiceServer/.vs/OdataServiceServer/v16
+/src/OdataServiceServer/OdataServiceServer/bin/Debug/net5.0
+/src/OdataServiceServer/OdataServiceServer/obj

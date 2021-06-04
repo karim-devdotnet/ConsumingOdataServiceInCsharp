@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataServiceServer", "OdataServiceServer\OdataServiceServer.csproj", "{C2CC4B21-7E57-4B4A-A71C-64CD2FF25C3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2CC4B21-7E57-4B4A-A71C-64CD2FF25C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CC4B21-7E57-4B4A-A71C-64CD2FF25C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CC4B21-7E57-4B4A-A71C-64CD2FF25C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CC4B21-7E57-4B4A-A71C-64CD2FF25C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B597D4F-A5B7-4071-9A33-E2F55A3EDCEF}
+	EndGlobalSection
+EndGlobal
