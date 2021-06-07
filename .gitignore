@@ -11,3 +11,5 @@
 /src/OdataServiceClient/OdataServiceClient.Konsole/bin/Debug/net5.0
 /src/OdataServiceClient/.vs/OdataServiceClient/DesignTimeBuild
 /src/OdataServiceServer/.vs/OdataServiceServer/DesignTimeBuild
+/src/OdataServiceClient/OdataServiceClient.Local.Konsole/bin/Debug/net5.0
+/src/OdataServiceClient/OdataServiceClient.Local.Konsole/obj
