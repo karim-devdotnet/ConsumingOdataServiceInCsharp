@@ -8,3 +8,6 @@
 /src/OdataServiceServer/.vs/OdataServiceServer/v16
 /src/OdataServiceServer/OdataServiceServer/bin/Debug/net5.0
 /src/OdataServiceServer/OdataServiceServer/obj
+/src/OdataServiceClient/OdataServiceClient.Konsole/bin/Debug/net5.0
+/src/OdataServiceClient/.vs/OdataServiceClient/DesignTimeBuild
+/src/OdataServiceServer/.vs/OdataServiceServer/DesignTimeBuild
