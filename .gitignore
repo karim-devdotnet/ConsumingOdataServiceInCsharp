@@ -13,3 +13,7 @@
 /src/OdataServiceServer/.vs/OdataServiceServer/DesignTimeBuild
 /src/OdataServiceClient/OdataServiceClient.Local.Konsole/bin/Debug/net5.0
 /src/OdataServiceClient/OdataServiceClient.Local.Konsole/obj
+/src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.1/bin/Debug/net5.0
+/src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.1/obj
+/src/OdataServiceClient/OdataServiceClient.SAP.Konsole/bin/Debug/net5.0
+/src/OdataServiceClient/OdataServiceClient.SAP.Konsole/obj
