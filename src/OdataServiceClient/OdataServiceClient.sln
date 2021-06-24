@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.Local.Ko
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataService.BruSAP.Konsole.V1", "OdataService.BruSAP.Konsole.V1\OdataService.BruSAP.Konsole.V1.csproj", "{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.SAP.Konsole", "OdataServiceClient.SAP.Konsole\OdataServiceClient.SAP.Konsole.csproj", "{2806AA66-38E7-4E6C-9B11-A70B7521A171}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2806AA66-38E7-4E6C-9B11-A70B7521A171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2806AA66-38E7-4E6C-9B11-A70B7521A171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2806AA66-38E7-4E6C-9B11-A70B7521A171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2806AA66-38E7-4E6C-9B11-A70B7521A171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
