@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Measures.V1" Alias="SAP__measures"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="SAP__capabilities"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="SAP__aggregation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Validation.V1" Alias="SAP__validation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="SAP__UI"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema Namespace="com.sap.gateway.srvd_a2x.zapi_serviceordertwa.v0001" Alias="SAP__self">
+      <EntityType Name="TWA_EntnahmestellenType">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.String" Nullable="false" MaxLength="10"/>
+        <Property Name="entnahmestelle" Type="Edm.String" Nullable="false" MaxLength="30"/>
+        <Property Name="zuBeproben" Type="Edm.String" Nullable="false" MaxLength="1"/>
+        <Property Name="strasseHausnummer" Type="Edm.String" Nullable="false" MaxLength="70"/>
+        <Property Name="etage" Type="Edm.String" Nullable="false" MaxLength="10"/>
+        <Property Name="lageGebaeudeteil" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="wohnung" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="raum" Type="Edm.String" Nullable="false" MaxLength="10"/>
+        <Property Name="genaueEntnahmestelle" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_id" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_name" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_vorname" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_telefon" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_mobile" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_email" Type="Edm.String" Nullable="false" MaxLength="50"/>
+        <Property Name="mieter_abweichendeAdresse" Type="Edm.String" Nullable="false" MaxLength="50"/>
+      </EntityType>
+      <EntityType Name="TWA_AuftragType">
+        <Key>
+          <PropertyRef Name="id"/>
+        </Key>
+        <Property Name="id" Type="Edm.String" Nullable="false" MaxLength="10"/>
+        <Property Name="wwaId" Type="Edm.String" Nullable="false"/>
+        <Property Name="wwaStrasseUndHausnummer" Type="Edm.String" Nullable="false"/>
+        <Property Name="wwaPlz" Type="Edm.String" Nullable="false"/>
+        <Property Name="wwaOrt" Type="Edm.String" Nullable="false"/>
+        <Property Name="untersuchungspflicht" Type="Edm.Byte" Nullable="false"/>
+        <Property Name="bemerkungTourenplanung" Type="Edm.String" Nullable="false"/>
+        <Property Name="gebaeudeNutzung" Type="Edm.String" Nullable="false"/>
+        <Property Name="objektnummer" Type="Edm.String" Nullable="false"/>
+        <Property Name="beprobenBis" Type="Edm.Date"/>
+        <Property Name="status" Type="Edm.Byte" Nullable="false"/>
+        <Property Name="nutzungsarten" Type="Edm.String" Nullable="false"/>
+        <Property Name="auftragsart" Type="Edm.Byte" Nullable="false"/>
+        <Property Name="stufeNachuntersuchung" Type="Edm.Byte" Nullable="false"/>
+      </EntityType>
+      <EntityContainer Name="Container">
+        <EntitySet Name="TWA_Auftrag" EntityType="com.sap.gateway.srvd_a2x.zapi_serviceordertwa.v0001.TWA_AuftragType"/>
+        <EntitySet Name="TWA_Entnahmestellen" EntityType="com.sap.gateway.srvd_a2x.zapi_serviceordertwa.v0001.TWA_EntnahmestellenType"/>
+      </EntityContainer>
+      <Annotations Target="SAP__self.TWA_EntnahmestellenType/id">
+        <Annotation Term="SAP__common.IsUpperCase"/>
+        <Annotation Term="SAP__common.Label" String="Vorgangs-ID"/>
+      </Annotations>
+      <Annotations Target="SAP__self.TWA_EntnahmestellenType">
+        <Annotation Term="SAP__common.Label" String="Entnahmestellen zum Serviceauftrag"/>
+      </Annotations>
+      <Annotations Target="SAP__self.Container/TWA_Entnahmestellen">
+        <Annotation Term="SAP__capabilities.SearchRestrictions">
+          <Record>
+            <PropertyValue Property="Searchable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.InsertRestrictions">
+          <Record>
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.DeleteRestrictions">
+          <Record>
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.UpdateRestrictions">
+          <Record>
+            <PropertyValue Property="Updatable" Bool="false"/>
+            <PropertyValue Property="QueryOptions">
+              <Record>
+                <PropertyValue Property="SelectSupported" Bool="true"/>
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.TWA_AuftragType/id">
+        <Annotation Term="SAP__common.IsUpperCase"/>
+        <Annotation Term="SAP__common.Label" String="Vorgangs-ID"/>
+      </Annotations>
+      <Annotations Target="SAP__self.TWA_AuftragType">
+        <Annotation Term="SAP__common.Label" String="Serviceauftrag TWA"/>
+      </Annotations>
+      <Annotations Target="SAP__self.Container/TWA_Auftrag">
+        <Annotation Term="SAP__capabilities.SearchRestrictions">
+          <Record>
+            <PropertyValue Property="Searchable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.FilterRestrictions">
+          <Record>
+            <PropertyValue Property="Filterable" Bool="true"/>
+            <PropertyValue Property="FilterExpressionRestrictions">
+              <Collection>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="wwaId"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="wwaStrasseUndHausnummer"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="wwaPlz"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="wwaOrt"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="bemerkungTourenplanung"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="gebaeudeNutzung"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="objektnummer"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="nutzungsarten"/>
+                  <PropertyValue Property="AllowedExpressions" String="SearchExpression"/>
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.SortRestrictions">
+          <Record>
+            <PropertyValue Property="NonSortableProperties">
+              <Collection>
+                <PropertyPath>wwaId</PropertyPath>
+                <PropertyPath>wwaStrasseUndHausnummer</PropertyPath>
+                <PropertyPath>wwaPlz</PropertyPath>
+                <PropertyPath>wwaOrt</PropertyPath>
+                <PropertyPath>bemerkungTourenplanung</PropertyPath>
+                <PropertyPath>gebaeudeNutzung</PropertyPath>
+                <PropertyPath>objektnummer</PropertyPath>
+                <PropertyPath>nutzungsarten</PropertyPath>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.InsertRestrictions">
+          <Record>
+            <PropertyValue Property="Insertable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.DeleteRestrictions">
+          <Record>
+            <PropertyValue Property="Deletable" Bool="false"/>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.UpdateRestrictions">
+          <Record>
+            <PropertyValue Property="Updatable" Bool="false"/>
+            <PropertyValue Property="QueryOptions">
+              <Record>
+                <PropertyValue Property="SelectSupported" Bool="true"/>
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.Container">
+        <Annotation Term="SAP__aggregation.ApplySupported">
+          <Record>
+            <PropertyValue Property="Transformations">
+              <Collection>
+                <String>aggregate</String>
+                <String>groupby</String>
+                <String>filter</String>
+              </Collection>
+            </PropertyValue>
+            <!--<PropertyValue Property="Rollup" EnumMember="None"/>-->
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
+        <Annotation Term="SAP__capabilities.FilterFunctions">
+          <Collection>
+            <String>eq</String>
+            <String>ne</String>
+            <String>gt</String>
+            <String>ge</String>
+            <String>lt</String>
+            <String>le</String>
+            <String>and</String>
+            <String>or</String>
+            <String>contains</String>
+            <String>startswith</String>
+            <String>endswith</String>
+            <String>any</String>
+            <String>all</String>
+          </Collection>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.TWA_EntnahmestellenType/etage">
+        <Annotation Term="SAP__common.Label" String="Stockwerk"/>
+        <Annotation Term="SAP__common.QuickInfo" String="Stockwerk im Gebäude"/>
+      </Annotations>
+      <Annotations Target="SAP__self.TWA_EntnahmestellenType/raum">
+        <Annotation Term="SAP__common.Label" String="Raumnummer"/>
+        <Annotation Term="SAP__common.QuickInfo" String="Nummer einer Wohnung, eines Appartements oder eines Raumes"/>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

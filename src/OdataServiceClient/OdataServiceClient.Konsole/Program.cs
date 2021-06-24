@@ -22,6 +22,8 @@ namespace OdataServiceClient.Konsole
             {
                 Console.WriteLine("{0} {1}", person.FirstName, person.LastName);
             }
+            var test = context.GetMetadataUri();
+            Console.WriteLine(test);
         }
     }
 }
