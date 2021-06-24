@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
+using OdataServiceClient.BruSAP.Konsole.V1;
 using System;
 using System.IO;
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 
-namespace OdataServiceClient.BruSAP.Konsole._1
+namespace OdataService.BruSAP.Konsole.V1
 {
     class Program
     {
@@ -14,9 +13,10 @@ namespace OdataServiceClient.BruSAP.Konsole._1
             try
             {
                 string odataServiceUrl = "https://sap-d.brunata.local/sap/opu/odata4/sap/za_serviceordertwa_o4/srvd_a2x/sap/zapi_serviceordertwa/0001/TWA_Auftrag?sap-client=100&$format=json&$top=5";
-                
+
                 HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(odataServiceUrl);
-                webRequest.Credentials = new NetworkCredential("user", "pwd");
+                //webRequest.Credentials = new NetworkCredential("user", "pwd");
+                webRequest.Headers.Add("Authorization: Basic ***");
                 WebResponse webResponse = webRequest.GetResponse();
                 using (var sr = new StreamReader(webResponse.GetResponseStream()))
                 {

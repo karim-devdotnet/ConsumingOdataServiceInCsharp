@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.Konsole"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.Local.Konsole", "OdataServiceClient.Local.Konsole\OdataServiceClient.Local.Konsole.csproj", "{B19E020B-BDDB-4BCF-9196-63947589152D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.BruSAP.Konsole.1", "OdataServiceClient.BruSAP.Konsole.1\OdataServiceClient.BruSAP.Konsole.1.csproj", "{F14EFC79-BA1F-4403-8524-982003BACCF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataService.BruSAP.Konsole.V1", "OdataService.BruSAP.Konsole.V1\OdataService.BruSAP.Konsole.V1.csproj", "{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{B19E020B-BDDB-4BCF-9196-63947589152D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B19E020B-BDDB-4BCF-9196-63947589152D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B19E020B-BDDB-4BCF-9196-63947589152D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F14EFC79-BA1F-4403-8524-982003BACCF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F14EFC79-BA1F-4403-8524-982003BACCF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F14EFC79-BA1F-4403-8524-982003BACCF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F14EFC79-BA1F-4403-8524-982003BACCF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OdataServiceClient.BruSAP.Konsole._1
+﻿namespace OdataServiceClient.BruSAP.Konsole.V1
 {
     public class TWA_Auftrag
     {
