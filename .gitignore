@@ -17,3 +17,7 @@
 /src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.1/obj
 /src/OdataServiceClient/OdataServiceClient.SAP.Konsole/bin/Debug/net5.0
 /src/OdataServiceClient/OdataServiceClient.SAP.Konsole/obj
+/src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.V2/bin/Debug/net5.0
+/src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.V2/obj/Debug/net5.0
+/src/OdataServiceClient/OdataServiceClient.BruSAP.Konsole.V2/obj
+/src/OdataServiceClient/packages
