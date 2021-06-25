@@ -23,3 +23,4 @@
 /src/OdataServiceClient/packages
 /src/OdataServiceClient/OdataService.BruSAP.Konsole.V1/obj
 /src/OdataServiceClient/OdataService.BruSAP.Konsole.V2/obj
+/src/OdataServiceClient/OdataService.BruSAP.Konsole.V2/bin/Debug/net5.0
