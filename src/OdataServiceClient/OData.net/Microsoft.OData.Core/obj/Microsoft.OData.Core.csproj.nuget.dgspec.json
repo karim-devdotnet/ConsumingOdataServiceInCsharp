@@ -1,0 +1,418 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Core\\Microsoft.OData.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Core\\Microsoft.OData.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Core\\Microsoft.OData.Core.csproj",
+        "projectName": "Microsoft.OData.Core",
+        "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Core\\Microsoft.OData.Core.csproj",
+        "packagesPath": "C:\\Users\\abdallah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\abdallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netstandard1.1",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Users\\abdallah\\source\\NugetPakete": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj"
+              },
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj"
+              }
+            }
+          },
+          "netstandard1.1": {
+            "targetAlias": "netstandard1.1",
+            "projectReferences": {
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj"
+              },
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj"
+              },
+              "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj": {
+                "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard1.1": {
+          "targetAlias": "netstandard1.1",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            },
+            "System.ComponentModel": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj",
+        "projectName": "Microsoft.OData.Edm",
+        "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\Microsoft.OData.Edm.csproj",
+        "packagesPath": "C:\\Users\\abdallah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.OData.Edm\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\abdallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netstandard1.1",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Users\\abdallah\\source\\NugetPakete": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          },
+          "netstandard1.1": {
+            "targetAlias": "netstandard1.1",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard1.1": {
+          "targetAlias": "netstandard1.1",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj",
+        "projectName": "Microsoft.Spatial",
+        "projectPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\Microsoft.Spatial.csproj",
+        "packagesPath": "C:\\Users\\abdallah\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abdallah\\source\\repos\\GitHub\\ConsumingOdataServiceInCsharp\\src\\OdataServiceClient\\OData.net\\Microsoft.Spatial\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\abdallah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netstandard1.1",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Users\\abdallah\\source\\NugetPakete": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          },
+          "netstandard1.1": {
+            "targetAlias": "netstandard1.1",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "targetAlias": "net45",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard1.1": {
+          "targetAlias": "netstandard1.1",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.FxCopAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
