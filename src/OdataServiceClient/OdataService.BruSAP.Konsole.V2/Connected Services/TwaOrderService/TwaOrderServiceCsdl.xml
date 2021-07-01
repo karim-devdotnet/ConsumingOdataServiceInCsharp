@@ -1,4 +1,37 @@
 <edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns="http://docs.oasis-open.org/odata/ns/edm" Version="4.0">
+  <!--<edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Measures.V1" Alias="SAP__measures"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="SAP__capabilities"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="SAP__aggregation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Validation.V1" Alias="SAP__validation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="SAP__UI"/>
+  </edmx:Reference>-->
   <edmx:DataServices>
     <Schema Namespace="com.sap.gateway.srvd_a2x.zapi_serviceordertwa.v0001" Alias="SAP__self">
       <EntityType Name="TWA_EntnahmestellenType">
