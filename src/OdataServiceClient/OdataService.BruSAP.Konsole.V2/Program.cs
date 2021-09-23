@@ -1,10 +1,9 @@
 ﻿using Com.Sap.Gateway.Srvd_a2x.Zapi_serviceordertwa.V0001;
 using Microsoft.OData.Client;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace OdataService.BruSAP.Konsole.V2
 {
@@ -12,8 +11,8 @@ namespace OdataService.BruSAP.Konsole.V2
     {
         static void Main(string[] args)
         {
-
             CallIssue();
+            CallTwa_Auftrage();
             Console.ReadLine();
         }
 
@@ -27,7 +26,7 @@ namespace OdataService.BruSAP.Konsole.V2
             //get all TWA_Auftrags
             //var issue = context.Issue.First();
 
-            var issueList = context.Issue.Execute();
+            var issueList = context.Issue.AddQueryOption("sap-client", "100").Execute().ToList();
             Console.WriteLine("Twa_AuftragList");
             foreach (var item in issueList)
             {
@@ -37,33 +36,35 @@ namespace OdataService.BruSAP.Konsole.V2
         
         static void CallTwa_Auftrage()
         {
-            string odataServiceUrl = "https://sap-d.brunata.local/sap/opu/odata4/sap/za_serviceordertwa_o4/srvd_a2x/sap/zapi_serviceordertwa/0001/";
+            string odataServiceUrl = "https://sap-d.brunata.local/sap/opu/odata4/sap/za_serviceordertwa_o4/srvd_a2x/sap/zapi_serviceordertwa/0001";
             var context = new Container(new Uri(odataServiceUrl));
 
             context.SendingRequest2 += (sender, e) => SendBaseAuthCredsOnTheRequest(sender, e);
 
             //get all TWA_Auftrags
-            TWA_AuftragTypeSingle twa_Auftrag = context.TWA_Auftrag.ByKey("6000000020");
-            var twa_AuftragCount = context.TWA_Auftrag.Count();
+            //TWA_AuftragTypeSingle twa_Auftrag = context.TWA_Auftrag.ByKey("6000000020");
+            var twa_AuftragCount = context.TWA_Auftrag.AddQueryOption("sap-client", "100").Count();
 
-            var twa_EntnamestelleList = context.TWA_Entnahmestellen.Execute();
+            List<TWA_EntnahmestellenType> twa_EntnamestelleList = context.TWA_Entnahmestellen.AddQueryOption("sap-client", "100").GetAllPages().ToList();
 
-            var twa_Auftrag1 = context.TWA_Auftrag.First();
-            var twa_AuftragList = context.TWA_Auftrag.Execute();
+            TWA_AuftragType twa_Auftrag1 = context.TWA_Auftrag.AddQueryOption("sap-client", "100").First();
+            IEnumerable<TWA_AuftragType> twa_AuftragList = context.TWA_Auftrag.AddQueryOption("sap-client", "100").Execute();
             Console.WriteLine("Twa_AuftragList");
+            int i = 1;
             foreach (var item in twa_AuftragList)
             {
-                Console.WriteLine($"Twa_Auftrag[{item.Id}]: {item.WwaStrasseUndHausnummer}");
+                Console.WriteLine($"{i}: Twa_Auftrag[{item.Id}]: {item.WwaStrasseUndHausnummer}");
+                i++;
             }
         }
 
         private static void SendBaseAuthCredsOnTheRequest(object sender, SendingRequest2EventArgs e)
         {
-            //var creds = “user” + “:” + “password”;
-            //var bcreds = Encoding.ASCII.GetBytes(creds);
-            //var base64Creds = Convert.ToBase64String(bcreds);
+            var creds = "ABDALLAH.A" + ":" + "****";
+            var bcreds = Encoding.ASCII.GetBytes(creds);
+            var base64Creds = Convert.ToBase64String(bcreds);
             //this is where you pass the creds.
-            e.RequestMessage.SetHeader("Authorization", "Basic ****/");
+            e.RequestMessage.SetHeader("Authorization", "Basic " + base64Creds);
         }
 
         //Every time a OData request is build it adds an Authorization Header with the acesstoken 

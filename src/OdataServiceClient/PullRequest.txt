@@ -1,0 +1,17 @@
+c:\users\abdallah\Downloads\odata.net-master\odata.net-master\src\Microsoft.OData.Core\ODataDeserializer.cs 
+
+Zeile 61:
+internal string AbsoluteUri
+{
+    get
+    {
+        return this.inputContext.MessageReaderSettings.BaseUri.AbsoluteUri;
+    }
+}
+		
+c:\users\abdallah\Downloads\odata.net-master\odata.net-master\src\Microsoft.OData.Core\JsonLight\ODataJsonLightDeserializer.cs
+Zeile 245
+if (!Uri.TryCreate(contextUriAnnotationValue, UriKind.Absolute, out contextUri))
+{
+    contextUriAnnotationValue = Path.Combine(this.AbsoluteUri, contextUriAnnotationValue);
+}
