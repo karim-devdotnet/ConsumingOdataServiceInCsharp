@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,19 +6,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Connected Services\IssueService\IssueServiceCsdl.xml" />
     <None Remove="Connected Services\TwaOrderService\TwaOrderServiceCsdl.xml" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Connected Services\IssueService\IssueServiceCsdl.xml" />
     <EmbeddedResource Include="Connected Services\TwaOrderService\TwaOrderServiceCsdl.xml" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.OData.Client" Version="7.9.0" />
-    <PackageReference Include="Microsoft.OData.Core" Version="7.9.0" />
-    <PackageReference Include="Microsoft.OData.Edm" Version="7.9.0" />
-    <PackageReference Include="Microsoft.Spatial" Version="7.9.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OData.net\src\Microsoft.OData.Client\Microsoft.OData.Client.csproj" />
   </ItemGroup>
 
   <ItemGroup>

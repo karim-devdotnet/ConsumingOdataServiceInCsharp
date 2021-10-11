@@ -24,5 +24,11 @@
 /src/OdataServiceClient/OdataService.BruSAP.Konsole.V1/obj
 /src/OdataServiceClient/OdataService.BruSAP.Konsole.V2/obj
 /src/OdataServiceClient/OdataService.BruSAP.Konsole.V2/bin/Debug/net5.0
+/src/OdataServiceClient/OData.net/Microsoft.OData.Edm/bin/Debug
+/src/OdataServiceClient/OData.net/Microsoft.OData.Edm/obj
+/src/OdataServiceClient/OData.net/Microsoft.Spatial/bin/Debug
+/src/OdataServiceClient/OData.net/Microsoft.Spatial/obj
+/src/OdataServiceClient/OdataService.BruSAP.Konsole.V1/bin/Debug/net5.0
+/src/OdataServiceClient/OdataService.BruSAP.Konsole.V2/bin/Release/net5.0
 /src/OdataServiceClient/OdataService.Konsole.Net48/bin
 /src/OdataServiceClient/OdataService.Konsole.Net48/obj

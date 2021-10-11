@@ -1,0 +1,301 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" xmlns="http://docs.oasis-open.org/odata/ns/edm" Version="4.0">
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Measures.V1" Alias="SAP__measures"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="SAP__capabilities"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="SAP__aggregation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="Org.OData.Validation.V1" Alias="SAP__validation"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://sap-d.brunata.local/sap/opu/odata/IWFND/CATALOGSERVICE;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='LOCAL')/$value">
+    <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="SAP__UI"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema Namespace="com.sap.gateway.srvd_a2x.zui_s4crm_sr_zral.v0001" Alias="SAP__self">
+      <EntityType Name="IssueType">
+        <Key>
+          <PropertyRef Name="ServiceIssue" />
+        </Key>
+        <Property Name="ServiceIssue" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="Priority" Type="Edm.String" Nullable="false" MaxLength="1" />
+        <Property Name="PriorityText" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ResponsibleEmployee" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="RespEmployeeFullName" Type="Edm.String" Nullable="false" MaxLength="80" />
+        <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="4" />
+        <Property Name="StatusCriticality" Type="Edm.Byte" Nullable="false" />
+        <Property Name="StatusText" Type="Edm.String" Nullable="false" MaxLength="60" />
+        <Property Name="BusinessActivityCategory" Type="Edm.String" Nullable="false" MaxLength="3" />
+        <Property Name="EntryChannel" Type="Edm.String" Nullable="false" MaxLength="20" />
+        <Property Name="ServiceDefectSchema" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ServiceDefectCategory" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ServiceDefectCodeText" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ServiceReasonSchema" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ServiceReasonCategory" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ServiceReasonCodeText" Type="Edm.String" Nullable="false" MaxLength="40" />
+        <Property Name="ProcessingTimeInHours" Type="Edm.Decimal" Nullable="false" Precision="15" />
+        <Property Name="Owner" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="OwnerFullName" Type="Edm.String" Nullable="false" MaxLength="81" />
+        <Property Name="BillToParty" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="ReportedBy" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="ReportedByFullName" Type="Edm.String" Nullable="false" MaxLength="81" />
+        <Property Name="ShipToParty" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="BuildingCustodian" Type="Edm.String" Nullable="false" MaxLength="10" />
+        <Property Name="CustodianFullName" Type="Edm.String" Nullable="false" MaxLength="220" />
+        <Property Name="ServiceDocCreationDateTime" Type="Edm.DateTimeOffset" />
+        <Property Name="CreationDate" Type="Edm.Date" />
+        <Property Name="FinishDateTimeStamp" Type="Edm.DateTimeOffset" />
+      </EntityType>
+      <EntityContainer Name="Container">
+        <EntitySet Name="Issue" EntityType="com.sap.gateway.srvd_a2x.zui_s4crm_sr_zral.v0001.IssueType" />
+      </EntityContainer>
+      <Annotations Target="SAP__self.IssueType/ServiceIssue">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Anliegen Nummer" />
+        <Annotation Term="SAP__common.QuickInfo" String="Anliegen nummer (objectid)" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/Priority">
+        <Annotation Term="SAP__common.Text" Path="PriorityText" />
+        <Annotation Term="SAP__common.IsDigitSequence" />
+        <Annotation Term="SAP__common.Label" String="Priorität" />
+        <Annotation Term="SAP__common.QuickInfo" String="Priorität einer Aktivität" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ResponsibleEmployee">
+        <Annotation Term="SAP__common.Text" Path="RespEmployeeFullName" />
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Zuständig. MA" />
+        <Annotation Term="SAP__common.Heading" String="Zuständig." />
+        <Annotation Term="SAP__common.QuickInfo" String="Zuständiger Mitarbeiter" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/Status">
+        <Annotation Term="SAP__common.Text" Path="StatusText" />
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Lebenszyklusstatus" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/StatusText">
+        <Annotation Term="SAP__common.Label" String="Beschreibung" />
+        <Annotation Term="SAP__common.Heading" String="Kurzbeschreibung" />
+        <Annotation Term="SAP__common.QuickInfo" String="Kurztext zu Festwerten" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/BusinessActivityCategory">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Kategorie" />
+        <Annotation Term="SAP__common.QuickInfo" String="Kategorie einer Aktivität (Kommunikationsart)" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceDefectSchema">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Schema-ID" />
+        <Annotation Term="SAP__common.QuickInfo" String="Mehrstufige Kategorisierung - Aspekt-ID" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceDefectCategory">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Kategorie-ID" />
+        <Annotation Term="SAP__common.QuickInfo" String="Mehrstufige Kategorisierung - Kategorie-ID" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceDefectCodeText">
+        <Annotation Term="SAP__common.Label" String="Kategorie 2" />
+        <Annotation Term="SAP__common.Heading" String="Kurztext zum Code" />
+        <Annotation Term="SAP__common.QuickInfo" String="Kurztext zum Code" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceReasonSchema">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Schema-ID" />
+        <Annotation Term="SAP__common.QuickInfo" String="Mehrstufige Kategorisierung - Aspekt-ID" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceReasonCategory">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Kategorie-ID" />
+        <Annotation Term="SAP__common.QuickInfo" String="Mehrstufige Kategorisierung - Kategorie-ID" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceReasonCodeText">
+        <Annotation Term="SAP__common.Label" String="Kategorie 1" />
+        <Annotation Term="SAP__common.Heading" String="Kurztext zum Code" />
+        <Annotation Term="SAP__common.QuickInfo" String="Kurztext zum Code" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ProcessingTimeInHours">
+        <Annotation Term="SAP__common.Label" String="Bearbeitungszeit(h)" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/Owner">
+        <Annotation Term="SAP__common.Text" Path="OwnerFullName" />
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Auftraggeber" />
+        <Annotation Term="SAP__common.Heading" String="Kunde" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/BillToParty">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Rechnungsempfänger" />
+        <Annotation Term="SAP__common.Heading" String="RE" />
+        <Annotation Term="SAP__common.QuickInfo" String="Rechungsempfänger" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ReportedBy">
+        <Annotation Term="SAP__common.Text" Path="ReportedByFullName" />
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Ansprechpartner" />
+        <Annotation Term="SAP__common.Heading" String="Anspr.part" />
+        <Annotation Term="SAP__common.QuickInfo" String="Ansprechpartner beim Kunden" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ShipToParty">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Warenempfänger" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/BuildingCustodian">
+        <Annotation Term="SAP__common.Text" Path="CustodianFullName" />
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Verwalter-ID" />
+        <Annotation Term="SAP__common.QuickInfo" String="Verwalter-ID Partnerrolle Z_VWT" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/CustodianFullName">
+        <Annotation Term="SAP__common.IsUpperCase" />
+        <Annotation Term="SAP__common.Label" String="Verwaltername" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/FinishDateTimeStamp">
+        <Annotation Term="SAP__common.Label" String="Abgeschlossen am:" />
+        <Annotation Term="SAP__common.QuickInfo" String="Zeitstempel (UTC) des Anfangszeitpunkts des Termins" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType">
+        <Annotation Term="SAP__common.Label" String="Projection view für Report Anliegen" />
+        <Annotation Term="Communication.Contact">
+          <Record />
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.Container/Issue">
+        <Annotation Term="SAP__capabilities.SearchRestrictions">
+          <Record>
+            <PropertyValue Property="Searchable" Bool="false" />
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.InsertRestrictions">
+          <Record>
+            <PropertyValue Property="Insertable" Bool="false" />
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.DeleteRestrictions">
+          <Record>
+            <PropertyValue Property="Deletable" Bool="false" />
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.UpdateRestrictions">
+          <Record>
+            <PropertyValue Property="Updatable" Bool="false" />
+            <PropertyValue Property="QueryOptions">
+              <Record>
+                <PropertyValue Property="SelectSupported" Bool="true" />
+              </Record>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__capabilities.FilterRestrictions">
+          <Record>
+            <PropertyValue Property="FilterExpressionRestrictions">
+              <Collection>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="Status" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="BusinessActivityCategory" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="ServiceDefectSchema" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="ServiceDefectCategory" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="ServiceReasonSchema" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="ServiceReasonCategory" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+                <Record>
+                  <PropertyValue Property="Property" PropertyPath="CustodianFullName" />
+                  <PropertyValue Property="AllowedExpressions" String="MultiValue" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.Container">
+        <Annotation Term="SAP__aggregation.ApplySupported">
+          <Record>
+            <PropertyValue Property="Transformations">
+              <Collection>
+                <String>aggregate</String>
+                <String>groupby</String>
+                <String>filter</String>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+        <Annotation Term="SAP__common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true" />
+        <Annotation Term="SAP__capabilities.FilterFunctions">
+          <Collection>
+            <String>eq</String>
+            <String>ne</String>
+            <String>gt</String>
+            <String>ge</String>
+            <String>lt</String>
+            <String>le</String>
+            <String>and</String>
+            <String>or</String>
+            <String>contains</String>
+            <String>startswith</String>
+            <String>endswith</String>
+            <String>any</String>
+            <String>all</String>
+          </Collection>
+        </Annotation>
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/PriorityText">
+        <Annotation Term="SAP__common.Label" String="Bezeichnung" />
+        <Annotation Term="SAP__common.QuickInfo" String="Beschreibung" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/Description">
+        <Annotation Term="SAP__common.Label" String="Vorgangsbeschreibung" />
+        <Annotation Term="SAP__common.QuickInfo" String="Beschreibung eines Vorgangs" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/RespEmployeeFullName">
+        <Annotation Term="SAP__common.Label" String="Vollständiger Name" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/EntryChannel">
+        <Annotation Term="SAP__common.Label" String="Beschreibung" />
+        <Annotation Term="SAP__common.QuickInfo" String="Beschreibung (20-stellig)" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/ServiceDocCreationDateTime">
+        <Annotation Term="SAP__common.Label" String="Angelegt am" />
+        <Annotation Term="SAP__common.QuickInfo" String="Angelegt um" />
+      </Annotations>
+      <Annotations Target="SAP__self.IssueType/CreationDate">
+        <Annotation Term="SAP__common.Label" String="Angelegt am" />
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
