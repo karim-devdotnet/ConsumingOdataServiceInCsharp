@@ -7,11 +7,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.Konsole"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.Local.Konsole", "OdataServiceClient.Local.Konsole\OdataServiceClient.Local.Konsole.csproj", "{B19E020B-BDDB-4BCF-9196-63947589152D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataService.BruSAP.Konsole.V1", "OdataService.BruSAP.Konsole.V1\OdataService.BruSAP.Konsole.V1.csproj", "{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataService.BruSAP.Konsole.V1", "OdataService.BruSAP.Konsole.V1\OdataService.BruSAP.Konsole.V1.csproj", "{8E478D6D-B296-4EAA-9F2C-B1BDB37CC5CF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataServiceClient.SAP.Konsole", "OdataServiceClient.SAP.Konsole\OdataServiceClient.SAP.Konsole.csproj", "{2806AA66-38E7-4E6C-9B11-A70B7521A171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataService.BruSAP.Konsole.V2", "OdataService.BruSAP.Konsole.V2\OdataService.BruSAP.Konsole.V2.csproj", "{92A94576-9EF6-4295-BA84-B6EE0B75D1AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OdataService.BruSAP.Konsole.V2", "OdataService.BruSAP.Konsole.V2\OdataService.BruSAP.Konsole.V2.csproj", "{92A94576-9EF6-4295-BA84-B6EE0B75D1AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "odata.net", "odata.net", "{57517B6F-8E65-47E9-9E4B-3BEABF52A52C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Spatial", "..\..\..\odata.net\src\Microsoft.Spatial\Microsoft.Spatial.csproj", "{B50EAB03-DEC9-41EE-8540-959EBA612057}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.OData.Edm", "..\..\..\odata.net\src\Microsoft.OData.Edm\Microsoft.OData.Edm.csproj", "{CE6D6002-D9AD-457A-81AC-9E5F01628A0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.OData.Core", "..\..\..\odata.net\src\Microsoft.OData.Core\Microsoft.OData.Core.csproj", "{63A05A34-55A9-4BE2-8CC1-A37F284252EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.OData.Client", "..\..\..\odata.net\src\Microsoft.OData.Client\Microsoft.OData.Client.csproj", "{788D7D35-8F44-43DC-8927-3CD385EE97D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdataService.Konsole.Net48", "OdataService.Konsole.Net48\OdataService.Konsole.Net48.csproj", "{1E5300F0-F1E5-4D63-8B79-9B6BFCD77F30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +51,35 @@ Global
 		{92A94576-9EF6-4295-BA84-B6EE0B75D1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92A94576-9EF6-4295-BA84-B6EE0B75D1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92A94576-9EF6-4295-BA84-B6EE0B75D1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B50EAB03-DEC9-41EE-8540-959EBA612057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B50EAB03-DEC9-41EE-8540-959EBA612057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B50EAB03-DEC9-41EE-8540-959EBA612057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B50EAB03-DEC9-41EE-8540-959EBA612057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6D6002-D9AD-457A-81AC-9E5F01628A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6D6002-D9AD-457A-81AC-9E5F01628A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6D6002-D9AD-457A-81AC-9E5F01628A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6D6002-D9AD-457A-81AC-9E5F01628A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A05A34-55A9-4BE2-8CC1-A37F284252EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A05A34-55A9-4BE2-8CC1-A37F284252EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A05A34-55A9-4BE2-8CC1-A37F284252EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A05A34-55A9-4BE2-8CC1-A37F284252EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788D7D35-8F44-43DC-8927-3CD385EE97D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788D7D35-8F44-43DC-8927-3CD385EE97D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788D7D35-8F44-43DC-8927-3CD385EE97D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788D7D35-8F44-43DC-8927-3CD385EE97D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E5300F0-F1E5-4D63-8B79-9B6BFCD77F30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E5300F0-F1E5-4D63-8B79-9B6BFCD77F30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E5300F0-F1E5-4D63-8B79-9B6BFCD77F30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E5300F0-F1E5-4D63-8B79-9B6BFCD77F30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B50EAB03-DEC9-41EE-8540-959EBA612057} = {57517B6F-8E65-47E9-9E4B-3BEABF52A52C}
+		{CE6D6002-D9AD-457A-81AC-9E5F01628A0F} = {57517B6F-8E65-47E9-9E4B-3BEABF52A52C}
+		{63A05A34-55A9-4BE2-8CC1-A37F284252EB} = {57517B6F-8E65-47E9-9E4B-3BEABF52A52C}
+		{788D7D35-8F44-43DC-8927-3CD385EE97D4} = {57517B6F-8E65-47E9-9E4B-3BEABF52A52C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D5AFB681-D972-4069-BC10-CCFE635F03C7}
